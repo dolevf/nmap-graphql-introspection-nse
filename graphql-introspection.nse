@@ -51,8 +51,17 @@ local function check_introspection(host, port)
     "/v1/graphql",
     "/v2/graphql",
     "/v3/graphql",
+    "/graphql/console",
+    "/v1/graphql/console",
+    "/v2/graphql/console",
+    "/v3/graphql/console",
+    "/v1/graphiql",
+    "/v2/graphiql",
+    "/v3/graphiql",
     "/playground",
-    "/query"
+    "/query",
+    "/explorer",
+    "/altair",
 }
   
 for _, path in ipairs(gql_endpoints) do
